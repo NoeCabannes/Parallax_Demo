@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+
+
 body{
     font-family: "poppins", sans-serif;
+    background-colo:#1B004A;
 }
 
 ::selection{
@@ -263,12 +266,36 @@ main {
 
 .fog-2{
     position: absolute;
-    width: 1560px;
-    top: calc(50% + 147px);
-    left: calc(50% - 30px);
+    width: 110%;
+    top: auto;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 16;
 }
+
+@media only screen and (max-width: 600px) {
+    .fog-2{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text h2{
+        font-weight: 50;
+        font-size: 3.25rem;
+        top: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text h1{
+        font-weight: 400;
+        font-size: 4rem;
+        line-height: 0.44;
+    }
+}
+
+
 
 .mountain-2{
     position: absolute;
